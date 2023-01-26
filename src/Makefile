@@ -31,8 +31,8 @@ EXEC= ../bin
 CC=mpicc
 LFLAGS=-lm -lfftw3 -lstdc++ -lumfpack
 CFLAGS=-O3 -w -fno-stack-protector -D_FORTIFY_SOURCE=0
-SFLAGS=-L$//home/daniel-koehn/libs/SuiteSparse/lib
-IFLAGS=-I$//home/daniel-koehn/libs/SuiteSparse/include -I./../include
+SFLAGS=-L$//home/yubel/downloads/SuiteSparse/lib
+IFLAGS=-I$//home/yubel/downloads/SuiteSparse/include -I./../include
 
 # On Desktop computer @ Geophysics (CAU Kiel) with Debian, OpenMPI and gcc 4.8.2
 #CC=mpicc
