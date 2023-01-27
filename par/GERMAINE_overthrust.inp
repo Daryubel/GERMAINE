@@ -10,7 +10,7 @@
 # Society of Exploration Geophysicists.
 # 
 #-------------------- GERMAINE modus -----------------------------------
-forward_modelling_(yes=0)_FDFWI_(yes=1)_RTM_(yes=2)_(INVMAT) = 0
+forward_modelling_(yes=0)_FDFWI_(yes=1)_RTM_(yes=2)_(INVMAT) = 1
 #
 # ---------------- GERMAINE Physics ------------------------------------
 (2D-AC=1;2D-SH=2;2D-TE=4)_(PHYSICS) = 1
@@ -32,7 +32,8 @@ WAVELET_NAME = start/wavelet.su
 #
 #--------------------- Model -------------------------------------------
 read_model_parameters_from_MFILE(yes=1)(READMOD) = 1
-MFILE = start/overthrust_true
+#MFILE = start/overthrust_true
+MFILE = start/overthrust_start_smooth2
 #
 #----------------------Free Surface-------------------------------------
 free_surface_(yes=1)(FREE_SURF) = 0
