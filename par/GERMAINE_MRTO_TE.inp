@@ -104,7 +104,7 @@ filtsize_in_gridpoints_(FILTSIZE) = 1
 read_taper_from_file_(yes=1)_(SWS_TAPER_FILE) = 0
 #
 # ----- Output of inverted models ----- #
-output_of_models_(INV_MODELFILE) = model/MRTO/start_model_1/modelTest
+output_of_models_(INV_MODELFILE) = model/MRTO/temp/modelTest
 first_model_to_be_saved_(nfstart) = 2000
 increment_between_saved_models_(nf) = 2000
 #
@@ -134,7 +134,7 @@ step_length_estimation_(Wolfe=1/Parabolic=2)_(LINESEARCH) = 2
 maximum_model_change_of_maximum_model_value_(EPS_SCALE) = 0.01 
 parameters_for_Wolfe_conditions_(C1,C2) = 1e-4, 0.9
 maximum_number_of_attemps_to_find_a_step_length_(STEPMAX) = 20
-SCALEFAC = 0.25
+SCALEFAC = 2.00
 #
 #----- MISFIT LOG FILE -----#
 log_file_for_misfit_evolution_(MISFIT_LOG_FILE) = LOG_TEST.dat
