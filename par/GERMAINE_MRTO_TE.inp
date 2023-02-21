@@ -104,7 +104,7 @@ filtsize_in_gridpoints_(FILTSIZE) = 1
 read_taper_from_file_(yes=1)_(SWS_TAPER_FILE) = 0
 #
 # ----- Output of inverted models ----- #
-output_of_models_(INV_MODELFILE) = model/modelTest
+output_of_models_(INV_MODELFILE) = model/MRTO/start_model_1/modelTest
 first_model_to_be_saved_(nfstart) = 2000
 increment_between_saved_models_(nf) = 2000
 #
