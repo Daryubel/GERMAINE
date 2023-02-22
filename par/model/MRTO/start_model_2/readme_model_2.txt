@@ -12,5 +12,8 @@ Sigma:
 	Accurate anomalous body position;
 
 Normalization Factor:
-	norm_sigma_(MAT1_NORM) = 5.6e-3
-	norm_epsilon_(MAT2_NORM) = 8.85e-12
+	norm_sigma_(MAT1_NORM) = 1.00
+	norm_epsilon_(MAT2_NORM) = 1.00
+
+Scaling Factor:
+	2.0
