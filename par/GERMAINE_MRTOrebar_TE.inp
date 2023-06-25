@@ -40,7 +40,7 @@ WAVELET_NAME = start/wavelet.su
 #
 #--------------------- Model -------------------------------------------
 read_model_parameters_from_MFILE(yes=1)(READMOD) = 1
-MFILE = start/modelMRTOhomo_init
+MFILE = start/modelMRTOrebar_sub_init
 #
 #----------------------Free Surface-------------------------------------
 free_surface_(yes=1)(FREE_SURF) = 0
@@ -113,12 +113,12 @@ first_gradient_to_be_saved(nfstart_jac) = 2000
 increment_between_saved_gradients_(nf_jac) = 1
 #
 # ----- Upper and lower bound for model parameters ----- #
-limits_for_sigmar_(MAT1_LOW,MAT1_UP) = 0.0008, 0.0102
-limits_for_epsilonr_(MAT2_LOW,MAT2_UP) = 2.0e-11, 18.0e-11
+limits_for_sigmar_(MAT1_LOW,MAT1_UP) = 0.0008, 0.1020
+limits_for_epsilonr_(MAT2_LOW,MAT2_UP) = 7.0e-11, 17.0e-11
 #
 # --- Normalization factor for material parameters ----- #
 norm_sigma_(MAT1_NORM) = 5.6e-3
-norm_epsilon_(MAT2_NORM) = 8.85e-12
+norm_epsilon_(MAT2_NORM) = 12.85e-11
 #
 # ----- Optimization-Method ------ #
 gradient_method_(PCG=1/LBFGS=2/Descent=3)_(GRAD_METHOD) = 1
